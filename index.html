@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>피트니스M - 프리미엄 헬스클럽</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up {
+      animation: fadeUp 1s ease-out both;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <header class="bg-black fixed top-0 left-0 w-full z-50">
+    <div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+      <img src="logo.png" alt="피트니스M 로고" class="h-12" />
+      <button class="md:hidden text-white" onclick="document.getElementById('menu').classList.toggle('hidden')">☰</button>
+      <nav id="menu" class="hidden md:flex space-x-6 text-white text-lg">
+        <a href="#home" class="hover:text-yellow-400 block">홈</a>
+        <a href="#facility" class="hover:text-yellow-400 block">운동 시설</a>
+        <a href="#equipment" class="hover:text-yellow-400 block">운동 기구</a>
+        <a href="#location" class="hover:text-yellow-400 block">위치</a>
+        <a href="#contact" class="hover:text-yellow-400 block">문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="pt-24 relative">
+    <div class="w-full h-screen bg-cover bg-center" style="background-image: url('fitness-hero.jpg');">
+      <div class="bg-black/70 w-full h-full flex items-center justify-center">
+        <div class="text-center space-y-6 fade-up">
+          <h1 class="text-5xl md:text-6xl font-bold">PREMIUM FITNESS M</h1>
+          <p class="text-yellow-400 text-xl tracking-widest">MUSCLE • MOVE • MOTION</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="facility" class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-12">운동 시설</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <img src="facility1.jpg" class="rounded-xl shadow-lg fade-up">
+        <img src="facility2.jpg" class="rounded-xl shadow-lg fade-up">
+      </div>
+    </div>
+  </section>
+
+  <section id="equipment" class="py-20 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-12">운동 기구</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <img src="equip1.jpg" class="rounded-xl shadow-lg fade-up">
+        <img src="equip2.jpg" class="rounded-xl shadow-lg fade-up">
+      </div>
+    </div>
+  </section>
+
+  <section id="location" class="py-20 bg-gray-900 text-center">
+    <h2 class="text-4xl font-bold mb-6">위치</h2>
+    <p class="text-xl">경기도 수원시 영통구 이의동 1316-2</p>
+  </section>
+
+  <section id="contact" class="py-20 bg-gray-800 text-center">
+    <h2 class="text-4xl font-bold mb-6">문의하기</h2>
+    <p class="text-xl mb-2">전화: <a href="tel:01030397668" class="text-yellow-400 hover:underline">010-3039-7668</a></p>
+    <p class="text-xl">카카오톡 상담: <a href="http://pf.kakao.com/_Jxhxgrn" target="_blank" class="text-yellow-400 hover:underline">클릭</a></p>
+  </section>
+
+  <footer class="bg-black text-center py-6">
+    <p class="text-gray-400 text-sm">&copy; 2025 피트니스M. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
